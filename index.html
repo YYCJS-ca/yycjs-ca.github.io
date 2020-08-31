@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YYCJS - Home to Calgary's JavaScript Community</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>YYCJS - Home to Calgary's JavaScript Community</title>
+  </head>
+  <body>
+    <main>
 
-<div id="CommunityInviter"></div>
-<script>
-  window.CommunityInviterAsyncInit = function () {
-    CommunityInviter.init({
-      app_url:'yycjs',
-      team_id:'yycjs'
-   })
-  };
+      <h1>Welcome to Calgary's JavaScript Community</h1>
+      <ul>
+        <li>- Join the Slack Community; see below input</li>
+        <li>- Join our Github Community; <a href="https://github.com/YYCJS-ca">Github</a></li>
+        <li>- Reach out to us on Twitter</li>
+      </ul>
 
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "https://communityinviter.com/js/communityinviter.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'Community_Inviter'));
-</script>
+      <div id="CommunityInviter"></div>
+    </main>
+    <script>
+      window.CommunityInviterAsyncInit = function () {
+        CommunityInviter.init({
+          app_url: "yycjs",
+          team_id: "yycjs",
+        });
+      };
 
-</body>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://communityinviter.com/js/communityinviter.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "Community_Inviter");
+    </script>
+  </body>
 </html>

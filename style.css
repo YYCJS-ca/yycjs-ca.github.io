@@ -1,0 +1,51 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid blue;
+}
+a:visited {
+  border-bottom: 2px solid rgba(85, 26, 139, 1);
+}
+
+button {
+  cursor: pointer;
+}
+
+#CommunityInviter button:hover {
+  padding: 4px 10px !important;
+  border: 2px solid black !important;
+}
+
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 2em;
+    padding: 15%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    padding: 25%;
+  }
+}
