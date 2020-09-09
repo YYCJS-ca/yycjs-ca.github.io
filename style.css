@@ -4,7 +4,9 @@ html, body {
 }
 
 body {
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 }
 
 h1 {
@@ -12,16 +14,15 @@ h1 {
   font-size: 1.2em;
 }
 
-li {
-  list-style: none;
+ul {
+  padding-left: 35px;
+  padding-bottom: 35px;
 }
 
-li a {
-  text-decoration: none;
-}
 
 img {
   display: inline-block;
+  display: none;
 }
 
 a:hover {
@@ -42,15 +43,14 @@ button {
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 630px) {
   body {
-    font-size: 2em;
-    padding: 15%;
+    font-size: 1.5em;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 830px) {
   body {
-    padding: 25%;
+    font-size: 2em;
   }
 }
